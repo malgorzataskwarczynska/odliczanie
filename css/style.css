@@ -1,0 +1,156 @@
+
+      
+     body {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+    }
+     
+     #square {
+        background-color: #88d8c0;
+        color: pink;
+        border-radius: 10px;
+        font-family: montserrat;
+        font-size: 150px;
+        height: 200px;
+        width: 400px;
+        position: relative;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .animation {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100vw;
+      }
+      
+      #countingfinal {
+        font-size: 80px;
+        line-height: inherit;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+        #counting1, #counting2, #counting3, #counting4, #counting5, #counting6, #counting7, #counting8, #counting9, #counting10, #countingfinal {
+        text-align: center;
+        visibility: hidden;
+      }
+      
+      @keyframes entering {
+          0% {
+              opacity:0;
+          }
+          100% {
+              opacity:1;
+          }
+      }
+
+      @keyframes disappearing {
+        0% {
+          visibility: visible;
+        }
+        100% {
+          visibility: hidden;
+        }
+      }
+      
+      @keyframes appearing {
+        0%, 100% {
+          visibility: visible;
+        }
+      }
+
+      #entering {
+          animation-delay:2s;
+          animation-duration:3s;
+          animation-fill-mode:both;
+          animation-name: entering;
+      }
+      
+      #counting10 {
+        animation-duration: 1s;
+        animation-name: disappearing;
+        animation-duration: ease-in-out;
+      }
+      
+      #counting9 {
+        animation-delay: 1s;
+        animation-duration: 1s;
+        animation-name: disappearing;
+        animation-timing-function: ease-in-out;
+      }
+      
+      #counting8 {
+        animation-delay: 2s;
+        animation-duration: 1s;
+        animation-name: disappearing;
+        animation-timing-function: ease-in-out;
+      }
+      
+      #counting7 {
+        animation-delay: 3s;
+        animation-duration: 1s;
+        animation-name: disappearing;
+        animation-timing-function: ease-in-out;
+      }
+      
+      #counting6 {
+        animation-delay: 4s;  
+        animation-duration: 1s;
+        animation-name: disappearing;
+        animation-timing-function: ease-in-out;
+      }
+      
+      #counting5 {
+        animation-delay: 5s;
+        animation-duration: 1s;
+        animation-name: disappearing;
+        animation-timing-function: ease-in-out;
+      }
+      
+      #counting4 {
+        animation-delay: 6s;
+        animation-duration: 1s;
+        animation-name: disappearing;
+        animation-timing-function: ease-in-out;
+      }
+      
+      #counting3 {
+        animation-delay: 7s;
+        animation-duration: 1s;
+        animation-name: disappearing;
+        animation-timing-function: ease-in-out;
+      }
+      
+      #counting2 {
+        animation-delay: 8s;
+        animation-duration: 1s;
+        animation-name: disappearing;
+        animation-timing-function: ease-in-out;
+      }
+      
+      #counting1 {
+        animation-delay: 9s;
+        animation-duration: 1s;
+        animation-name: disappearing;
+        animation-timing-function: ease-in-out;
+      }
+      
+      #countingfinal {
+        animation-delay: 10s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-name: appearing;
+        animation-timing-function: ease-in-out;
+      }
+      
+      #countingfinal span {
+          color:pink;
+      }
+      
